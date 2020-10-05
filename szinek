@@ -1,0 +1,13 @@
+import turtle               # allows us to use the turtles library
+ablak=turtle.Screen()
+alex=turtle.Turtle()
+
+def rajz(szogek_szama, szin):
+    hossz=75
+    
+    alex.color(szin)
+    for i in range(szogek_szama):
+        alex.forward(hossz)
+        alex.left(360/szogek_szama)
+        
+rajz(3, 'pruple')        
